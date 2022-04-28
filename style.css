@@ -146,9 +146,9 @@ button{
 }
 
 #resultado textarea {
-    width: 16vw;
+    width: 10vw;
     height: 60vh;
-    border-radius: 10px;
+    border-radius: 20px;
     resize: none;
     border: none;
     outline:none;
@@ -205,5 +205,60 @@ a:visited {
     margin-right: 10vw;
 }
 #iconos-footer{
-    font-size: 2vw;
+    font-size: 3vh;
+}
+
+@media only screen and (max-width: 768px){
+    #section-botones {
+        position: absolute;
+        left: 30vw;
+        top: 50vh;
+        background: #F3F5FC;
+    }
+
+    #text-area {
+        position: absolute;
+        left: 15vw;
+        top: 10vh;
+        width: 70vw;
+        height: 30vh;
+        box-shadow: 7px 7px 15px #0A3871;
+        border-radius: 20px;
+    }
+    #resultado{
+        left: 15vw;
+        top: 65vh;
+        width: 70vw;
+        height: 20vh;
+    }
+
+    #resultado textarea {
+        width: 55vw;
+        height: 60vh;
+        border-radius: 10px;
+        resize: none;
+        border: none;
+        outline:none;
+        padding: 20px;
+        color: #355058;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100%;
+        background-color: #FFFFFF;
+    }
+    .info {
+        margin-left: 0px;
+        margin-bottom: 15px;
+        padding-left: 0px; 
+        font-size: 1rem;
+    }
+    .info p{
+        padding-left: 12px;
+        font-size: 1rem;
+    }
+
+    footer{
+        width: 100%;
+        height: 7vh;
+        font-size: 2vh;
+    }
 }
