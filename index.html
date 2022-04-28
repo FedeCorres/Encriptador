@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cc6afc65f2.js" crossorigin="anonymous"></script>    <LINK rel=StyleSheet href="style.css" type="text/css" media=screen>
+    <link rel="icon" type="image/jpg" href="img/favicon/favicon.webp"/>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <nav id="logo">
+            <img src="img/logo.svg" alt="logo-alura">
+        </nav>
+    </header>
+    <main>
+        <div id="medio">
+            <form id="text-area">
+                <textarea name="textarea" placeholder="Ingrese el texto aqui..." autofocus required id="textarea-ingreso"></textarea>
+            </form>
+            
+            <div id="section-botones">
+                <div class="info">
+                    <i class="fa-regular fa-circle-info"></i>
+                    <p>  Solo letras minusculas y sin acento</p>
+                </div>
+                <div class="botones">
+                    <button type="submit"  id="encriptar" onclick="encriptador(this)">Encriptar</button>
+                    <button type="submit" id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="resultado">
+            <textarea placeholder="Aun no hay resultados!" id="textarea-resultado"></textarea>
+            <span id="message">
+
+            </span>
+            <button id="copiar">Copiar</button>
+        </div>
+        <script src="js.js"></script>
+    </main>
+    <footer>
+        <div id="iconos-footer">
+            <a href="https://github.com/FedeCorres" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/federico-andr%C3%A9s-corres-176100164/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div id="leyenda-footer">
+            <p>Web realizada por <a href="https://github.com/FedeCorres" target="_blank">Fede Corres</a></p>
+        </div>
+    </footer>
+</body>
+</html>
